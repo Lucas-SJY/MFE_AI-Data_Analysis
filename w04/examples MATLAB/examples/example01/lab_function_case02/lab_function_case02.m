@@ -1,0 +1,6 @@
+[x,y]=meshgrid(-10:0.01:10)
+z=SGA_FITNESS_function(x,y)
+mesh(x,y,z)
+xlabel('x')
+xlabel('y')
+zlabel('(sin(x)./x).*(sin(y)./y)')

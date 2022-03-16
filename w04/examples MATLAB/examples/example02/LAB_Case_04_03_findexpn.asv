@@ -1,0 +1,23 @@
+prompt='How many combinations you want to get?\n';
+x=input(prompt);
+
+for i=1:x
+    p=randperm(8,2);
+    A=p(1);
+    B=p(2);
+    q=randperm(9,1);
+    C=q(1);
+    if C=9
+        C=C-9;
+    else
+        C=C;
+    end
+    while (A-B~=C)
+    p=randperm(8,2);
+    A=p(1);
+    B=p(2);
+    q=randperm(9,1);
+    C=q(1);
+    end
+    fprintf('%d - %d = %d\n',A,B,C)
+end

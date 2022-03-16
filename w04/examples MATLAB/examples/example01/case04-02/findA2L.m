@@ -1,0 +1,33 @@
+num=[11 22 33 44 55 66 77 88]
+A=num(1)
+B=num(2)
+C=num(3)
+D=num(4)
+E=num(5)
+F=num(6)
+G=num(7)
+H=num(8)
+ans=[11 22 33 44 55 66 77 88]
+I=ans(1)
+J=ans(2)
+K=ans(3)
+L=ans(4)
+while A-B~=I || C-D~=J || E-F~=K|| G-H~=L
+rand1=randperm(8)
+rand2=randperm(8)
+randnum=num(rand1) 
+randans=ans(rand2) 
+A=randnum(1)
+B=randnum(2)
+C=randnum(3)
+D=randnum(4)
+E=randnum(5)
+F=randnum(6)
+G=randnum(7)
+H=randnum(8)
+
+I=randans(1)
+J=randans(2)
+K=randans(3)
+L=randans(4)
+end
